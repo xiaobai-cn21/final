@@ -27,6 +27,7 @@ int main() {
     std::cout << "Login: ok=" << loginResult.ok << ", error=" << loginResult.error << ", userId=" << loginResult.userId << ", token=" << loginResult.token << std::endl;
 
     if (loginResult.ok && !loginResult.token.empty()) {
+        std::cout << "trung to validate";
         AuthResult tokenResult = validateToken(loginResult.token);
         std::cout << "ValidateToken: ok=" << tokenResult.ok << ", error=" << tokenResult.error << ", userId=" << tokenResult.userId << ", role=" << tokenResult.role << std::endl;
     }
