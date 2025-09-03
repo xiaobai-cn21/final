@@ -30,5 +30,5 @@ int main() {
         std::cout << "ValidateToken: ok=" << tokenResult.ok << ", error=" << tokenResult.error << ", userId=" << tokenResult.userId << ", role=" << tokenResult.role << std::endl;
     }
 
-    return;
+    return 1;
 }
