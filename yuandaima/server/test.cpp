@@ -22,6 +22,7 @@ int main() {
     AuthResult regResult = registerUser(username, password, email, company, role);
     std::cout << "Register: ok=" << regResult.ok << ", error=" << regResult.error << ", userId=" << regResult.userId << std::endl;
 
+     std::cout << "ssasdasd <<" << std::endl;
     AuthResult loginResult = authenticateUser(username, password, role);
     std::cout << "Login: ok=" << loginResult.ok << ", error=" << loginResult.error << ", userId=" << loginResult.userId << ", token=" << loginResult.token << std::endl;
 
